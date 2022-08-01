@@ -1,0 +1,110 @@
+/*Heading*/
+    .headera-linkler{
+        position:relative;
+        top: 10px;
+        margin-left: 25px;
+        color:white;
+        text-decoration: none;
+        font-size: large;
+        font-weight: bold;
+    }
+    #headerh1-UNALSTORE{
+        position: absolute;
+        left: 460px;
+        top: 100px;
+        color: white;
+        font-size: 75px;     
+    }
+    #headerp-Since1978{
+        position: absolute;
+        left: 660px;
+        top: 235px;
+        color: white;
+        font-size: large;  
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }  
+    #headerimg-Logo{
+        position: absolute;
+        left: 630px;
+        top: 470px;   
+        width: 125px;
+        height: 125px;  
+    }  
+/*Heading*/
+/*Section*/
+    .section{
+        
+        /* background-color: yellow;
+        border: 2px solid gray;  */
+        
+        width: 1335px;
+        height: 1200px;
+        position: relative;
+        top: 664px;
+    
+    }   
+    .sectionlink{
+        /* background-color:green; 
+        border: 2px solid gray;*/
+        width: 350px;
+        height: 550px;
+        display: inline-block;
+        margin-left: 55px;
+        margin-top: 55px; 
+        text-align: center;   
+    }
+    .sectionlinkaciklama{
+        color: black;
+        text-align: center;
+        font-size: large;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, monospace;
+    }
+    .sectionimg{
+        width: 250px;
+        height: 250px;
+        
+    }
+
+/*Section*/
+/*Footer*/
+.footer{
+    /* background-color:green; 
+    border: 2px solid gray; */
+    width: 1330px;
+    height:1000px;
+}
+.whychooseus{
+    /* background-color:red; 
+    border: 2px solid gray; */
+    width: 750px;
+    margin-left:300px ;
+    margin-top: 60px;
+    height: 250px;
+    position: absolute;  
+    text-align: center; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, monospace;
+}
+.about{
+    /* background-color:yellow;
+    border: 2px solid gray; */
+    width: 750px;
+    margin-left:300px ;
+    height: 250px;
+    position: absolute;
+    margin-top:365px; 
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, monospace; 
+
+}
+.contactus{
+    /* background-color:yellow;
+    border: 2px solid gray; */
+    width: 750px;
+    margin-left:300px ;
+    height: 250px;
+    position: absolute;
+    margin-top: 730px; 
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, monospace; 
+}
+/* Footer*/

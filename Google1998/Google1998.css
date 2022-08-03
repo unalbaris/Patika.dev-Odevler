@@ -1,0 +1,41 @@
+.container{
+    width: 795;
+    height: 289px;
+    /* border: 2px dotted red; */
+    font-family: 'Times New Roman', Times, serif,;
+    font-size: 13px;
+    
+}
+
+.box1{
+    width: 795;
+    height: 113px;
+    /* border: 2px dotted black; */
+}
+.box2{
+    width: 795;
+    height: 113px;
+    /* border: 2px dotted green;  */
+}
+.box3{
+    width: 795;
+    height: 16px;
+    /* border: 2px dotted blue; */
+    margin-top:35px;
+    text-align: center;
+
+}
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 711.5;
+    height: 140px;
+}
+.satir1{
+    height:62px;
+    background-color:#EEEEEE;;
+    text-align: center;
+}
+.satir2{
+    height:76px;
+}

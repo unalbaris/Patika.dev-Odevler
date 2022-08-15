@@ -1,0 +1,413 @@
+</html> 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
+    <head>
+      <nav class="navbar " style="background-color:gray ;" >  
+        <div class="container-fluid ">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a class="navbar-brand" href="#">
+                <img src="Image/Logo.jpg" width="50px" alt="">
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="text-decoration-none link-dark" href="">Store</a>
+            </li>
+            <li class="list-inline-item mx-4">
+              <a class="text-decoration-none link-dark" href="">About</a>
+            </li>
+            <li class="list-inline-item">
+              <a class="text-decoration-none link-dark" href="">Contact Us</a>
+            </li>
+          </ul>
+          <ul class="list-inline mx-5">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/marketplace/profile/100076499631829/?ref=share_attachment">
+                  <img src="https://www.nicepng.com/png/full/333-3334195_free-png-gray-facebook-logo-png-png-images.png" width="20px" height="20px" alt="facebook-logo">
+              </a>
+            </li>
+          </ul>
+        </div> 
+      </nav>
+<!-- ------------------------------------------------------- -->
+     <div class="container-fluid p-0 border border-5 border-secondary g-0">  <!-- Head Büyük RESİM kısmı  -->
+        <div class="card text-white w-100">
+          <img src="Image/Header.jpg" class="card-img"  alt="UNALSTORE-logo">
+          <div class="card-img-overlay">
+            <p class="card-title text-center " style="font-size: 75px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">UNAL STORE</p>
+            <p class="card-text text-center " style="font-size: 25px;">Since 1978</p>     
+          </div>
+        </div>
+      </div>
+<!-- -------------------------------------------------------- -->
+      <!-- Ünal Store Logosu-Ürün Kısmının hemen üstü Başlangıç  -->
+      <div class="container my-5 text-center"> 
+        <img src="Image/Logo.jpg" style="width: 130px; height: 130px;" alt="https://d2j6dbq0eux0bg.cloudfront.net/startersite/images/76463158/1657817727118.jpg">
+
+      </div>
+      <!-- Ünal Store Logosu-Ürün Kısmının hemen üstü Bitiş  -->
+    </head>
+
+
+    <section class="container my-5">
+      <div class="row gx-0">
+        <div class="col">
+          <!-- Her carousele özgü id tanımlandığı için bu yapıyı kopyaladığında id'leri değiştimeyi unutma!!!!!!-->
+    
+          <!-- Örnek Card Ürün Yapısı Başlangıç-->
+          <div class="card text-center shadow h-100"  style="width: 17rem;" > 
+            <!--Carousel Yapısı Başlangıç-->
+            <div class="carousel slide " id="mySlide1"> <!-- data-bs-ride="carousel" (Otomatik belli bir sürede resim kaydırma özelliği) çıkarıldı-->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mySlide1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="İlk Slayt" ></button>
+                <button type="button" data-bs-target="#mySlide1" data-bs-slide-to="1" aria-label="İlk Slayt" ></button> <!-- class="active" aria-current="true" çıkarıldı-->
+                <button type="button" data-bs-target="#mySlide1" data-bs-slide-to="2" aria-label="İlk Slayt" ></button> <!-- class="active" aria-current="true" çıkarıldı-->  
+              </div>
+              <!-- carousel-inner Başlangıç -->
+              <div class="carousel-inner">
+                <div class="carousel-item active"> 
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3133822234.jpg"  height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3133822234.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+                <div class="carousel-item">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3133827887.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3133827887.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+                <div class="carousel-item">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3133828389.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3133828389.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+              </div>
+              <!-- carousel-inner Bitiş -->
+              <button type="button" class="carousel-control-prev" data-bs-target="#mySlide1" data-bs-slide="prev" >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Önceki</span>
+              </button>
+    
+              <button type="button" class="carousel-control-next" data-bs-target="#mySlide1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sonraki</span>
+              </button>
+            </div>
+            <!--Carousel Yapısı Bitiş-->
+            <div class="card-body">
+              <h6 class="card-title" style="height: 115px;" >Owl Shape Light LED Solar Garden Light Owl Lawn Lamp Waterproof Solar Led Lights Outdoor Lighting Night Light Decorative Home Garden (White)</h6>
+              <p class="card-text">£16.24</p>
+              <a href="https://unalofficial2022.company.site/Owl-Shape-Light-LED-Solar-Garden-Light-Owl-Lawn-Lamp-Waterproof-Solar-Led-Lights-Outdoor-Lighting-Night-Light-Decorative-Home-Garden-White-p475748523" class=" btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </div>
+          <!-- Örnek Card Ürün Yapısı Bitiş-->
+        </div>
+        <div class="col">
+          <!-- Her carousele özgü id tanımlandığı için bu yapıyı kopyaladığında id'leri değiştimeyi unutma!!!!!!-->
+          <div class="card text-center shadow h-100"  style="width: 17rem;" > 
+            <div class="carousel slide" id="mySlide2"><!--ID-->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mySlide2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="İlk Slayt" ></button><!--ID-->
+                <button type="button" data-bs-target="#mySlide2" data-bs-slide-to="1" aria-label="İlk Slayt" ></button><!--ID-->
+                <button type="button" data-bs-target="#mySlide2" data-bs-slide-to="2" aria-label="İlk Slayt" ></button><!--ID-->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3148214965.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3148214965.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+                <div class="carousel-item">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3148224189.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3148224189.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+                <div class="carousel-item">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3148208245.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3148208245.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+              </div>
+              <button type="button" class="carousel-control-prev" data-bs-target="#mySlide2" data-bs-slide="prev" ><!--ID-->
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Önceki</span>
+              </button>
+              <button type="button" class="carousel-control-next" data-bs-target="#mySlide2" data-bs-slide="next"><!--ID-->
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sonraki</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title" style="height: 115px;">8 Pack 16 LED Solar Path Lights IP65 Waterproof Solar Decking Disk Lights Solar Powered Floor Lamps for Garden Fence Lawn Patio Yard Landscape, Warm White</h6>
+              <p class="card-text">£30.79</p>
+              <a href="https://unalofficial2022.company.site/PhilzOps-Solar-Ground-Lights-Outdoor-8-Pack-16-LED-Solar-Path-Lights-IP65-Waterproof-Solar-Decking-Disk-Lights-Solar-Powered-Floor-Lamps-for-Garden-Fence-Lawn-Patio-Yard-Landscape-Warm-White-p478799219" class=" btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </div>
+          <!-- Örnek Card Ürün Yapısı Bitiş-->
+        </div>
+        <div class="col">
+          <!-- Her carousele özgü id tanımlandığı için bu yapıyı kopyaladığında id'leri değiştimeyi unutma!!!!!!-->
+          <div class="card text-center shadow h-100"  style="width: 17rem;" > 
+            <div class="carousel slide" id="mySlide3"><!--ID-->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mySlide3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="İlk Slayt" ></button><!--ID-->
+                <button type="button" data-bs-target="#mySlide3" data-bs-slide-to="1" aria-label="İlk Slayt" ></button><!--ID-->
+                <button type="button" data-bs-target="#mySlide3" data-bs-slide-to="2" aria-label="İlk Slayt" ></button><!--ID-->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150020526.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150020526.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+                <div class="carousel-item">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150016364.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150016364.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+                <div class="carousel-item">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150020531.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150020531.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+              </div>
+              <button type="button" class="carousel-control-prev" data-bs-target="#mySlide3" data-bs-slide="prev" ><!--ID-->
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Önceki</span>
+              </button>
+              <button type="button" class="carousel-control-next" data-bs-target="#mySlide3" data-bs-slide="next"><!--ID-->
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sonraki</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title" style="height: 115px;">Lights Outdoor Garden, 8 Pack Solar Pathway Lights, Waterproof Solar Landscape Lights Outdoor for Garden Lamps for Patio, Lawn and Yard</h6>
+              <p class="card-text">£12.00</p>
+              <a href="https://unalofficial2022.company.site/Flowood-Solar-Lights-Outdoor-Garden-8-Pack-Solar-Pathway-Lights-Waterproof-Solar-Landscape-Lights-Outdoor-for-Garden-Lamps-for-Patio-Lawn-and-Yard-p479067686" class=" btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </div>
+          <!-- Örnek Card Ürün Yapısı Bitiş-->
+        </div>
+        <div class="col">
+          <!-- Her carousele özgü id tanımlandığı için bu yapıyı kopyaladığında id'leri değiştimeyi unutma!!!!!!-->
+          <div class="card text-center shadow h-100"  style="width: 17rem;" > 
+            <div class="carousel slide" id="mySlide4"><!--ID-->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mySlide4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="İlk Slayt" ></button><!--ID-->
+                <button type="button" data-bs-target="#mySlide4" data-bs-slide-to="1" aria-label="İlk Slayt" ></button><!--ID-->
+                <button type="button" data-bs-target="#mySlide4" data-bs-slide-to="2" aria-label="İlk Slayt" ></button><!--ID-->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150238191.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150238191.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+                <div class="carousel-item">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150239443.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150239443.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+                <div class="carousel-item">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150250607.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150250607.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+              </div>
+              <button type="button" class="carousel-control-prev" data-bs-target="#mySlide4" data-bs-slide="prev" ><!--ID-->
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Önceki</span>
+              </button>
+              <button type="button" class="carousel-control-next" data-bs-target="#mySlide4" data-bs-slide="next"><!--ID-->
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sonraki</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title" style="height: 115px;">BestWay Family Swimming Paddling Pool Rectangular Inflatable Above Ground 10'X72"X22" Blue</h6>
+              <p class="card-text">£49.00</p>
+              <a href="https://unalofficial2022.company.site/BestWay-Family-Swimming-Paddling-Pool-Rectangular-Inflatable-Above-Ground-10X72-X22-Blue-p479156780" class=" btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </div>
+          <!-- Örnek Card Ürün Yapısı Bitiş-->
+        </div>
+      
+      <div class="row mt-3 gx-0">
+        <div class="col">
+          <!-- Her carousele özgü id tanımlandığı için bu yapıyı kopyaladığında id'leri değiştimeyi unutma!!!!!!-->
+          <div class="card text-center shadow h-100"  style="width: 17rem;" > 
+            <div class="carousel slide" id="mySlide5"><!--ID-->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mySlide5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="İlk Slayt" ></button><!--ID-->
+                <button type="button" data-bs-target="#mySlide5" data-bs-slide-to="1" aria-label="İlk Slayt" ></button><!--ID-->
+                <button type="button" data-bs-target="#mySlide5" data-bs-slide-to="2" aria-label="İlk Slayt" ></button><!--ID-->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150878857.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150878857.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+                <div class="carousel-item">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150891033.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150891033.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+                <div class="carousel-item">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150886728.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3150886728.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+              </div>
+              <button type="button" class="carousel-control-prev" data-bs-target="#mySlide5" data-bs-slide="prev" ><!--ID-->
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Önceki</span>
+              </button>
+              <button type="button" class="carousel-control-next" data-bs-target="#mySlide5" data-bs-slide="next"><!--ID-->
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sonraki</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title" style="height: 115px;">AVC Designs Pet Dog Pen Puppy Cat Rabbit Foldable Playpen Indoor/Outdoor Enclosure Run Cage (Small: Height 61cm)</h6>
+              <p class="card-text">£34.00</p>
+              <a href="https://unalofficial2022.company.site/AVC-Designs-Pet-Dog-Pen-Puppy-Cat-Rabbit-Foldable-Playpen-Indoor-Outdoor-Enclosure-Run-Cage-Small-Height-61cm-p479286832" class=" btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </div>
+          <!-- Örnek Card Ürün Yapısı Bitiş-->
+        </div>
+        <div class="col">
+          <!-- Her carousele özgü id tanımlandığı için bu yapıyı kopyaladığında id'leri değiştimeyi unutma!!!!!!-->
+          <div class="card text-center shadow h-100"  style="width: 17rem;" > 
+            <div class="carousel slide" id="mySlide6"><!--ID-->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mySlide6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="İlk Slayt" ></button><!--ID-->
+                <button type="button" data-bs-target="#mySlide6" data-bs-slide-to="1" aria-label="İlk Slayt" ></button><!--ID-->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3151051593.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3151051593.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+                <div class="carousel-item">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3151050588.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3151050588.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+              </div>
+              <button type="button" class="carousel-control-prev" data-bs-target="#mySlide6" data-bs-slide="prev" ><!--ID-->
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Önceki</span>
+              </button>
+              <button type="button" class="carousel-control-next" data-bs-target="#mySlide6" data-bs-slide="next"><!--ID-->
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sonraki</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title" style="height: 115px;">Bestway BW58241 10 feet Steel Pro Frame, Solar Swimming Pool Cover, Blue</h6>
+              <p class="card-text">£22.00</p>
+              <a href="https://unalofficial2022.company.site/Bestway-BW58241-10-feet-Steel-Pro-Frame-Solar-Swimming-Pool-Cover-Blue-p479477786" class=" btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </div>
+          <!-- Örnek Card Ürün Yapısı Bitiş-->
+        </div>
+        <div class="col">
+          <!-- Her carousele özgü id tanımlandığı için bu yapıyı kopyaladığında id'leri değiştimeyi unutma!!!!!!-->
+          <div class="card text-center shadow h-100"  style="width: 17rem;" > 
+            <div class="carousel slide" id="mySlide7"><!--ID-->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mySlide7" data-bs-slide-to="0" class="active" aria-current="true" aria-label="İlk Slayt" ></button><!--ID-->
+                <button type="button" data-bs-target="#mySlide7" data-bs-slide-to="1" aria-label="İlk Slayt" ></button><!--ID-->
+                <button type="button" data-bs-target="#mySlide7" data-bs-slide-to="2" aria-label="İlk Slayt" ></button><!--ID-->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3155301247.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3155301247.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+                <div class="carousel-item">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3155323750.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3155323750.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+                <div class="carousel-item">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3155305652.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3155305652.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+              </div>
+              <button type="button" class="carousel-control-prev" data-bs-target="#mySlide7" data-bs-slide="prev" ><!--ID-->
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Önceki</span>
+              </button>
+              <button type="button" class="carousel-control-next" data-bs-target="#mySlide7" data-bs-slide="next"><!--ID-->
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sonraki</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title" style="height: 115px;">Easylife Post Box Garden Bird House | Attractive garden feature and nest box home for nesting birds | H25xW19.2xD12cm</h6>
+              <p class="card-text">£25.00</p>
+              <a href="https://unalofficial2022.company.site/Easylife-Post-Box-Garden-Bird-House-Attractive-garden-feature-and-nest-box-home-for-nesting-birds-H25xW19-2xD12cm-H25xW19-2xD12cm-p480507263" class=" btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </div>
+          <!-- Örnek Card Ürün Yapısı Bitiş-->
+        </div>
+        <div class="col">
+          <!-- Her carousele özgü id tanımlandığı için bu yapıyı kopyaladığında id'leri değiştimeyi unutma!!!!!!-->
+          <div class="card text-center shadow h-100"  style="width: 17rem;" > 
+            <div class="carousel slide" id="mySlide8"><!--ID-->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mySlide8" data-bs-slide-to="0" class="active" aria-current="true" aria-label="İlk Slayt" ></button><!--ID-->
+                <button type="button" data-bs-target="#mySlide8" data-bs-slide-to="1" aria-label="İlk Slayt" ></button><!--ID-->
+                <button type="button" data-bs-target="#mySlide8" data-bs-slide-to="2" aria-label="İlk Slayt" ></button><!--ID-->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3147103931.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3147103931.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+                <div class="carousel-item">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3147103934.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3147103934.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+                <div class="carousel-item">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3147125292.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3147125292.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+              </div>
+              <button type="button" class="carousel-control-prev" data-bs-target="#mySlide8" data-bs-slide="prev" ><!--ID-->
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Önceki</span>
+              </button>
+              <button type="button" class="carousel-control-next" data-bs-target="#mySlide8" data-bs-slide="next"><!--ID-->
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sonraki</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title" style="height: 115px;">Starplast Small Dog Kennel: 1 Outdoor Plastic Pet House, Weather & Water Resistant, Easy to Assemble, 27.9 x 27.9 x 26.8 Inches, 2 Color Options 10-701
+              </h6>
+              <p class="card-text">£53.69</p>
+              <a href="https://unalofficial2022.company.site/Starplast-Small-Dog-Kennel-1-Outdoor-Plastic-Pet-House-Weather-&-Water-Resistant-Easy-to-Assemble-27-9-x-27-9-x-26-8-Inches-2-Color-Options-10-701-p478672569" class=" btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </div>
+          <!-- Örnek Card Ürün Yapısı Bitiş-->
+        </div>
+      </div>
+
+      <div class="row my-3 gx-0">
+        <div class="col">
+          <!-- Her carousele özgü id tanımlandığı için bu yapıyı kopyaladığında id'leri değiştimeyi unutma!!!!!!-->
+          <div class="card text-center shadow h-100"  style="width: 17rem;" > 
+            <div class="carousel slide" id="mySlide9"><!--ID-->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mySlide9" data-bs-slide-to="0" class="active" aria-current="true" aria-label="İlk Slayt" ></button><!--ID-->
+                <button type="button" data-bs-target="#mySlide9" data-bs-slide-to="1" aria-label="İlk Slayt" ></button><!--ID-->
+                <button type="button" data-bs-target="#mySlide9" data-bs-slide-to="2" aria-label="İlk Slayt" ></button><!--ID-->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3147117396.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3147117396.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+                <div class="carousel-item">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3147121842.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3147121842.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+                <div class="carousel-item">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3147139501.jpg" height="225px" class="card-img-top " alt="https://d2j6dbq0eux0bg.cloudfront.net/images/76463158/3147139501.jpg" > <!-- Resimlerin boyutları ayarlanmalı. -->
+                </div>
+              </div>
+              <button type="button" class="carousel-control-prev" data-bs-target="#mySlide9" data-bs-slide="prev" ><!--ID-->
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Önceki</span>
+              </button>
+              <button type="button" class="carousel-control-next" data-bs-target="#mySlide9" data-bs-slide="next"><!--ID-->
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sonraki</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title" style="height: 115px;">Homestead Brown Half Barrel Cask Planter - Large, Set of 2 Pots - 22cm (H) x 40cm (Dia) - Suitable for Indoor or Outdoor Use.</h6>
+              <p class="card-text">£37.49</p>
+              <a href="https://unalofficial2022.company.site/Homestead-Brown-Half-Barrel-Cask-Planter-Large-Set-of-2-Pots-22cm-H-x-40cm-Dia-Suitable-for-Indoor-or-Outdoor-Use-p478654239" class=" btn btn-primary btn-sm">Buy Now</a>
+            </div>
+          </div>
+          <!-- Örnek Card Ürün Yapısı Bitiş-->
+        </div>       
+      </div>
+
+    
+    </section>
+
+   
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>

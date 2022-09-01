@@ -1,16 +1,20 @@
 ::placeholder{
-  background-color:aqua;
   text-align: center;
   font-size: 14px;
   color: gray;
   background-position: 40%;
   background-size: 6%;
+  background-image: url(/Instagram/assets/search-solid.svg);
+  background-repeat: no-repeat;
+  background-position-x: left; 
 }
 
 .logo{
   margin-left: 192px;
 }
-
+.middlearea{
+  max-height: 200px !important;
+}
 input.empty {
     font-family: FontAwesome;
     font-style: normal;

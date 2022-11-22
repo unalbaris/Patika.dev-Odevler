@@ -26,7 +26,7 @@ body {
     background-color: #fff;
 }
 
-.seat:not(.reserved):hover {
+.seat:not(.reserved, .sub):hover {
     cursor: pointer;
     transform: scale(1.3);
 }

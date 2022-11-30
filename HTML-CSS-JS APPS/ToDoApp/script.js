@@ -7,7 +7,7 @@ loadItems();
 
 function loadItems() {
     items = getItemFromLS();
-    items.forEach(item => CreateAndDelete(item));
+    items.forEach(item => createItem(item));
 }
 
 //get items from local storage
@@ -45,20 +45,24 @@ list.addEventListener("click",function(item){
         item.target.classList.toggle("checked");
         ToggleDeleteButton();
     }
+
+    if(item.target.tagName=="SPAN") {
+        deleteItem(item.target);
+    }
 });
 
 //toggle  delete button
 function ToggleDeleteButton() {
     let checkList = document.querySelectorAll(".checked");
     if (checkList.length>0) {
-        document.querySelector("#deleteAll").classList.remove("d-none");
+        document.querySelector("#deleteChosen").classList.remove("d-none");
     } else {
-        document.querySelector("#deleteAll").classList.add("d-none");
+        document.querySelector("#deleteChosen").classList.add("d-none");
     }
 }
 
-//deleteAll items
-document.querySelector("#deleteAll").onclick = function() {
+//deleteChosen items
+document.querySelector("#deleteChosen").onclick = function() {
     let elements = document.querySelectorAll(".checked");
 
     elements.forEach(item =>{
@@ -66,9 +70,13 @@ document.querySelector("#deleteAll").onclick = function() {
         deleteFromLS(item.firstChild.textContent);
     });
 
-    
+    //localstorage clear
+    if (localStorage.getItem("items") === "[]"){
+        localStorage.clear();
+    }
 
-    document.querySelector("#deleteAll").classList.add("d-none");
+    
+    document.querySelector("#deleteChosen").classList.add("d-none");
 }
 
 //add new item
@@ -82,7 +90,7 @@ document.querySelector("#btnCreate").onclick = function() {
     }
 
     //create item
-    CreateAndDelete(item); 
+    createItem(item); 
     
     //save to local storage
     setItemToLS(item);
@@ -91,7 +99,7 @@ document.querySelector("#btnCreate").onclick = function() {
     document.querySelector("#txtItem").value = "";
 }
 
-function CreateAndDelete(item) {
+function createItem(item) {
     //create li
     let li = document.createElement("li");
     var textLi = document.createTextNode(item);
@@ -108,15 +116,29 @@ function CreateAndDelete(item) {
     span.appendChild(textSp);
 
     //add span to li
-    li.appendChild(span);
+    li.appendChild(span);   
+}
 
-    //delete an item
-    span.onclick = function() {
-        let li = this.parentElement;
-        li.remove();
+//delete an item
+function deleteItem() {  
+    let li = document.querySelector(".list-group-item");
+    li.remove();
 
-        //delete from local storage
-        deleteFromLS(item);
-    }    
+    //delete from local storage
+    deleteFromLS(li.firstChild.textContent);
+
+    //localstorage clear
+    if (localStorage.getItem("items") === "[]"){
+        localStorage.clear();
+    }
+} 
+
+//delete all items
+document.querySelector("#deleteAll").onclick = function() {
+    list.innerHTML = ""
+
+    //localstorage clear
+    localStorage.clear();
+    
 }
 

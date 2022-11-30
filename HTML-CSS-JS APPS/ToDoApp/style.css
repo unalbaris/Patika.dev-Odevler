@@ -24,3 +24,9 @@ ul li.checked {
     right: 5px;
     top: 5px; 
 }
+
+#deleteChosen {
+    position: absolute;
+    right: 89px;
+    top: 5px; 
+}

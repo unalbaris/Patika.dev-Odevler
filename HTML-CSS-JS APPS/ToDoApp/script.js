@@ -1,4 +1,4 @@
-let list = document.querySelector("#myList")
+let list = document.querySelector("#myList");
 let items;
 
 
@@ -53,7 +53,7 @@ list.addEventListener("click",function(item){
 
 //toggle  delete button
 function ToggleDeleteButton() {
-    let checkList = document.querySelectorAll(".checked");
+    let checkList = document.querySelectorAll(".checked");   
     if (checkList.length>0) {
         document.querySelector("#deleteChosen").classList.remove("d-none");
     } else {
@@ -77,6 +77,11 @@ document.querySelector("#deleteChosen").onclick = function() {
 
     
     document.querySelector("#deleteChosen").classList.add("d-none");
+
+    //hide delete all button
+    if (list.firstElementChild==null) {
+        document.querySelector("#deleteAll").classList.add("d-none");
+    }
 }
 
 //add new item
@@ -117,6 +122,11 @@ function createItem(item) {
 
     //add span to li
     li.appendChild(span);   
+
+    //show delete all button
+    if (list.firstElementChild.tagName=="LI") {
+        document.querySelector("#deleteAll").classList.remove("d-none");
+    }
 }
 
 //delete an item
@@ -131,14 +141,34 @@ function deleteItem() {
     if (localStorage.getItem("items") === "[]"){
         localStorage.clear();
     }
+    
+
+    //hide delete chosen button
+    if (document.querySelectorAll(".checked").length==0) {
+        document.querySelector("#deleteChosen").classList.add("d-none");
+    }
+
+    //hide delete all button
+    if (list.firstElementChild==null) {
+        document.querySelector("#deleteAll").classList.add("d-none");
+    }
 } 
 
 //delete all items
 document.querySelector("#deleteAll").onclick = function() {
     list.innerHTML = ""
-
     //localstorage clear
     localStorage.clear();
-    
+
+    //hide delete all button
+    if (list.firstElementChild==null) {
+        document.querySelector("#deleteAll").classList.add("d-none");
+    }
+
+    //hide delete chosen button
+    if (document.querySelectorAll(".checked").length==0) {
+        document.querySelector("#deleteChosen").classList.add("d-none");
+    }
+   
 }
 

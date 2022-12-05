@@ -81,3 +81,28 @@ const menu = [
     desc: `Red bean paste dessert, serving with honey.`,
   },
 ];
+
+let btns = document.querySelector(".btn-container");
+
+btns.innerHTML = `<button type="button" class="btn btn-light me-2" id="all">All</button> 
+                  <button type="button" class="btn btn-light me-2" id="korea">Korea</button>
+                  <button type="button" class="btn btn-light me-2" id="japan"">Japan</button>
+                  <button type="button" class="btn btn-light" id="china">China</button>`;
+let all = document.querySelector("#all");
+let korea = document.querySelector("#korea");
+let japan = document.querySelector("#japan");
+let china = document.querySelector("#china");
+
+eventListeners();
+
+function eventListeners() {
+  all.addEventListener("click", allContent);
+  korea.addEventListener("click", koreaContent);
+  japan.addEventListener("click", japanContent);
+  china.addEventListener("click", chinaContent);
+}    
+
+//all content
+function allContent() {
+  
+}
